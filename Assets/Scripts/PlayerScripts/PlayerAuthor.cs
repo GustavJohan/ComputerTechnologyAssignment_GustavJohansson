@@ -26,8 +26,6 @@ public class PlayerAuthor : MonoBehaviour
             AddComponent(entity, new PlayerTag());
             
             AddComponent(entity, new PlayerPosition());
-            
-            
         }
     }
     

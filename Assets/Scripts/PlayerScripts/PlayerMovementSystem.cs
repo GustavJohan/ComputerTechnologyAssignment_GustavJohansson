@@ -44,7 +44,7 @@ public partial class PlayerMovementSystem : SystemBase
         foreach ((RefRW<LocalTransform> transform, RefRO<PlayerMovementSpeed> playerMovementSpeed) in
                  SystemAPI.Query<RefRW<LocalTransform>, RefRO<PlayerMovementSpeed>>())
         {
-            transform.ValueRW.Position.xy += transform.ValueRW.Up().xy * 
+            transform.ValueRW.Position.xy += transform.ValueRW.Up().xy *
                                              playerMovementSpeed.ValueRO.speed * MoveInput.y * SystemAPI.Time.DeltaTime;
 
 
